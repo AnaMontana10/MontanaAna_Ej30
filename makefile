@@ -1,13 +1,13 @@
-plotonda.png: datosonda.dat MontanaAna_Ej29.py
-	python MontanaAna_Ej29.py 
+plot.gif: datos30.dat MontanaAna_Ej30.py
+	python MontanaAna_Ej30.py 
 
 
-datosonda.dat: MontanaAna_Ej29.x
-	./MontanaAna_Ej29.x 
+datos30.dat: MontanaAna_Ej30.x
+	./MontanaAna_Ej30.x 
 
-MontanaAna_Ej29.x: MontanaAna_Ej29.cpp
-	g++ MontanaAna_Ej29.cpp -o MontanaAna_Ej29.x
+MontanaAna_Ej30.x: MontanaAna_Ej30.cpp
+	g++ MontanaAna_Ej30.cpp -o MontanaAna_Ej30.x
 
 clean: 
-	rm -rf MontanaAna_Ej29.x datosonda.dat plotonda.png
+	rm -rf MontanaAna_Ej30.x datos30.dat plot.gif
 
